@@ -22,7 +22,7 @@
             <port name="position" type="point" value="-90.00,187.00"/>
             <port name="width" type="float" value="122.0"/>
         </node>
-        <node name="Original" position="3.00,1.00" prototype="corevector.textpath">
+        <node name="Original" position="2.00,1.00" prototype="corevector.textpath">
             <port name="text" type="string" value="Original"/>
             <port name="position" type="point" value="-88.00,185.00"/>
         </node>
@@ -45,7 +45,7 @@
             <port name="text" type="string" value="Widen"/>
             <port name="position" type="point" value="-78.00,187.00"/>
         </node>
-        <node name="colorize2" position="3.00,3.00" prototype="corevector.colorize">
+        <node name="colorize2" position="2.00,3.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#00000000"/>
             <port name="strokeWidth" type="float" value="4.0"/>
         </node>
@@ -90,17 +90,19 @@
         <node name="combine9" position="3.00,13.00" prototype="list.combine"/>
         <node name="copy1" position="6.00,1.00" prototype="corevector.copy">
             <port name="copies" type="int" value="2"/>
-            <port name="translate" type="point" value="60.00,-21.00"/>
+            <port name="order" type="string" value="srt"/>
+            <port name="translate" type="point" value="64.00,96.00"/>
+            <port name="rotate" type="float" value="-7.0"/>
         </node>
-        <node name="freehand1" position="2.00,-2.00" prototype="corevector.freehand">
-            <port name="path" type="string" value="M75.21,-72.28  73.88,-73.61  71.22,-74.94  71.22,-76.27  69.89,-76.27  68.56,-77.60  65.90,-77.60  63.25,-78.93  60.59,-80.25  57.93,-81.58  55.27,-82.91  52.61,-84.24  51.28,-84.24  49.96,-84.24  47.30,-84.24  40.65,-84.24  35.34,-84.24  28.69,-86.90  19.39,-86.90  15.40,-86.90  12.74,-86.90  11.42,-86.90  10.09,-86.90  7.43,-86.90  3.44,-86.90  -9.85,-86.90  -13.83,-86.90  -15.16,-86.90  -23.14,-86.90  -24.47,-86.90  -25.80,-86.90  -28.45,-86.90  -40.41,-84.24  -47.06,-80.25  -51.05,-80.25  -55.03,-77.60  -59.02,-76.27  -60.35,-74.94  -63.01,-72.28  -65.66,-68.29  -68.32,-64.31  -69.65,-64.31  -69.65,-61.65  -72.31,-58.99  -73.64,-56.33  -74.97,-55.00  -76.30,-53.68  -81.61,-44.37  -82.94,-37.73  -85.60,-28.42  -89.59,-21.78  -89.59,-19.12  -89.59,-17.79  -89.59,-15.14  -90.91,-9.82  -90.91,2.14  -90.91,4.80  -92.24,8.79  -92.24,22.08  -92.24,35.37  -92.24,44.67  -92.24,48.65  -90.91,51.31  -90.91,55.30  -89.59,60.62  -86.93,67.26  -84.27,73.90  -80.28,79.22  -72.31,88.52  -61.68,95.17  -52.37,100.48  -44.40,103.14  -41.74,104.47  -39.08,104.47  -37.76,104.47  -32.44,105.80  -25.80,108.46  -17.82,111.12  -13.83,111.12  -12.51,111.12  -8.52,112.44  -3.20,112.44  6.10,112.44  14.07,112.44  20.72,112.44  26.03,112.44  31.35,111.12  35.34,111.12  37.99,109.79  40.65,109.79  43.31,108.46  44.64,107.13  47.30,105.80  48.63,104.47  51.28,103.14  52.61,101.81  53.94,100.48  56.60,99.16  57.93,96.50  60.59,95.17  61.92,95.17  63.25,92.51  65.90,89.85  67.23,88.52  68.56,88.52  68.56,85.87  69.89,84.54  71.22,81.88  73.88,80.55  75.21,77.89  77.86,76.56  77.86,75.23  80.52,72.58  83.18,68.59  85.84,65.93  87.17,64.60  87.17,61.94  87.17,60.62  87.17,57.96  88.50,52.64  89.82,49.98  89.82,47.33  89.82,43.34  89.82,42.01  91.15,39.35  91.15,31.38  91.15,30.05  91.15,27.39  93.81,23.40  93.81,19.42  93.81,15.43  95.14,14.10  95.14,10.11  95.14,8.79  95.14,6.13  95.14,4.80  95.14,0.81  95.14,-1.85  95.14,-3.17  95.14,-7.16  95.14,-11.15  95.14,-12.48  95.14,-15.14  95.14,-19.12  95.14,-21.78  95.14,-29.75  95.14,-31.08  95.14,-33.74  95.14,-36.40  95.14,-40.39  95.14,-41.71  95.14,-48.36  95.14,-49.69  93.81,-51.02  93.81,-53.68  93.81,-55.00  93.81,-56.33  92.48,-57.66  92.48,-58.99  91.15,-58.99  89.82,-60.32  89.82,-62.98  89.82,-62.98  89.82,-62.98  87.17,-62.98  85.84,-64.31  85.84,-66.96  83.18,-66.96  83.18,-68.29  81.85,-69.62  80.52,-72.28  77.86,-73.61  76.53,-73.61 M-31.26,-29.31  -29.78,-30.79  -26.83,-30.79  -26.83,-30.79  -26.83,-29.31  -26.83,-26.36  -26.83,-23.40  -26.83,-13.07  -26.83,-10.11  -26.83,-8.64  -26.83,-10.11  -26.83,-17.50 M8.61,-27.83  10.09,-23.40  13.04,-17.50  13.04,-14.54  13.04,-14.54  13.04,-10.11  13.04,-5.68 M-40.12,34.18  -40.12,35.66  -40.12,38.61  -35.69,46.00  -35.69,47.47  -28.31,51.90  -23.88,51.90  -17.97,56.33  -7.63,56.33  -0.25,56.33  10.09,57.81  11.56,57.81  15.99,57.81  20.42,57.81  23.38,56.33  24.85,56.33  27.81,56.33  29.28,51.90  30.76,50.43  32.24,47.47  32.24,46.00  32.24,44.52  32.24,43.04  35.19,43.04  35.19,43.04  32.24,46.00  30.76,48.95  29.28,50.43  26.33,54.86  23.38,56.33  23.38,57.81  21.90,57.81  20.42,57.81  17.47,57.81  14.52,57.81  1.23,57.81  -0.25,57.81  -1.73,57.81  -10.59,54.86  -13.54,54.86 "/>
+        <node name="freehand1" position="-1.00,-3.00" prototype="corevector.freehand">
+            <port name="path" type="string" value="M782.50,-445.07  778.64,-445.07  763.21,-445.07  743.93,-445.07  732.35,-445.07  720.78,-445.07  713.07,-445.07  697.64,-445.07  686.07,-437.36  674.49,-433.50  674.49,-429.64  662.92,-421.93  651.35,-402.64  639.78,-391.07  635.92,-383.36  635.92,-379.50  635.92,-375.64  632.06,-367.93  632.06,-337.07  632.06,-321.64  632.06,-313.92  632.06,-310.07  632.06,-302.35  635.92,-290.78  635.92,-286.92  639.78,-279.21  651.35,-263.78  666.78,-259.92  686.07,-256.06  689.92,-252.21  693.78,-252.21  697.64,-252.21  713.07,-252.21  724.64,-252.21  747.78,-248.35  751.64,-248.35  759.36,-248.35  763.21,-248.35  767.07,-252.21  782.50,-256.06  786.36,-256.06  794.07,-259.92  801.79,-259.92  805.64,-263.78  813.36,-263.78  817.22,-263.78  821.07,-267.64  828.79,-271.49  832.65,-279.21  836.50,-286.92  836.50,-290.78  836.50,-302.35  836.50,-306.21  836.50,-317.78  836.50,-337.07  836.50,-352.50  836.50,-360.21  836.50,-367.93  836.50,-371.78  836.50,-375.64  836.50,-383.36  828.79,-391.07  828.79,-398.79  828.79,-402.64  824.93,-410.36  824.93,-418.07  821.07,-421.93  821.07,-429.64  817.22,-433.50  817.22,-437.36  817.22,-441.22  813.36,-441.22  805.64,-441.22  794.07,-448.93  782.50,-448.93  778.64,-448.93  774.79,-448.93  770.93,-448.93 M709.21,-429.64  709.21,-418.07  709.21,-387.21  709.21,-371.78 M790.21,-433.50  790.21,-429.64  790.21,-418.07  790.21,-406.50  790.21,-394.93  790.21,-387.21 M666.78,-356.35  678.35,-344.78  686.07,-337.07  686.07,-333.21  689.92,-329.35  689.92,-321.64  689.92,-321.64  693.78,-321.64  701.50,-317.78  713.07,-310.07  716.93,-310.07  716.93,-310.07  724.64,-310.07  732.35,-310.07  740.07,-310.07  740.07,-310.07  743.93,-310.07  747.78,-310.07  751.64,-310.07  755.50,-310.07  759.36,-310.07  763.21,-310.07  774.79,-310.07  790.21,-310.07  790.21,-313.92  794.07,-313.92  797.93,-317.78  805.64,-325.50  813.36,-337.07  817.22,-337.07  817.22,-340.93  817.22,-344.78  821.07,-348.64 "/>
         </node>
         <node name="grid1" position="33.00,0.00" prototype="corevector.grid">
             <port name="columns" type="int" value="4"/>
             <port name="rows" type="int" value="4"/>
             <port name="width" type="float" value="234.0"/>
             <port name="height" type="float" value="212.0"/>
-            <port name="position" type="point" value="23.00,0.00"/>
+            <port name="position" type="point" value="-157.00,76.00"/>
         </node>
         <node name="group1" position="37.00,3.00" prototype="corevector.group"/>
         <node name="import_svg1" position="7.00,9.00" prototype="corevector.import_svg">
@@ -112,7 +114,10 @@
             <port name="font_size" type="float" value="44.0"/>
             <port name="position" type="point" value="141.00,-237.00"/>
         </node>
-        <node name="rect1" position="3.00,2.00" prototype="corevector.rect">
+        <node name="make_point2" position="5.00,6.00" prototype="corevector.make_point">
+            <port name="x" type="float" value="-9.0"/>
+        </node>
+        <node name="rect1" position="2.00,2.00" prototype="corevector.rect">
             <port name="position" type="point" value="22.00,-1.00"/>
             <port name="width" type="float" value="300.0"/>
             <port name="height" type="float" value="300.0"/>
@@ -154,7 +159,8 @@
             <port name="per_contour" type="boolean" value="true"/>
         </node>
         <node name="scale1" position="12.00,1.00" prototype="corevector.scale">
-            <port name="scale" type="point" value="41.00,100.00"/>
+            <port name="scale" type="point" value="39.00,100.00"/>
+            <port name="origin" type="point" value="-410.00,-107.00"/>
         </node>
         <node name="scale2" position="18.00,1.00" prototype="corevector.scale">
             <port name="scale" type="point" value="100.00,36.00"/>
@@ -164,11 +170,26 @@
             <port name="scale" type="point" value="24.00,24.00"/>
         </node>
         <node name="scale5" position="37.00,0.00" prototype="corevector.scale"/>
-        <node name="translate1" position="6.00,6.00" prototype="corevector.translate">
-            <port name="translate" type="point" value="-3.00,0.00"/>
+        <node name="translate1" position="6.00,7.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-9.00,0.00"/>
         </node>
-        <node name="translate2" position="12.00,6.00" prototype="corevector.translate">
-            <port name="translate" type="point" value="358.00,0.00"/>
+        <node name="translate10" position="6.00,4.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-720.00,343.00"/>
+        </node>
+        <node name="translate11" position="18.00,4.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-715.00,105.00"/>
+        </node>
+        <node name="translate12" position="24.00,4.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-718.00,343.00"/>
+        </node>
+        <node name="translate13" position="37.00,4.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-713.00,355.00"/>
+        </node>
+        <node name="translate14" position="2.00,4.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-705.00,330.00"/>
+        </node>
+        <node name="translate2" position="12.00,7.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="361.00,0.00"/>
         </node>
         <node name="translate3" position="18.00,6.00" prototype="corevector.translate">
             <port name="translate" type="point" value="717.00,0.00"/>
@@ -180,11 +201,14 @@
             <port name="translate" type="point" value="359.00,371.00"/>
         </node>
         <node name="translate6" position="30.00,1.00" prototype="corevector.translate"/>
-        <node name="translate7" position="2.00,6.00" prototype="corevector.translate">
-            <port name="translate" type="point" value="717.00,-365.00"/>
+        <node name="translate7" position="2.00,7.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="718.00,-365.00"/>
         </node>
         <node name="translate8" position="37.00,6.00" prototype="corevector.translate">
             <port name="translate" type="point" value="716.00,371.00"/>
+        </node>
+        <node name="translate9" position="12.00,4.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-8.00,343.00"/>
         </node>
         <node name="varRoundness" position="8.00,-7.00" prototype="math.number">
             <port name="value" type="float" value="20.0"/>
@@ -198,11 +222,9 @@
         </node>
         <conn input="colorize2.shape" output="rect1"/>
         <conn input="combine1.list2" output="colorize2"/>
-        <conn input="combine1.list1" output="freehand1"/>
         <conn input="colorize3.shape" output="rect2"/>
         <conn input="combine2.list2" output="colorize3"/>
         <conn input="copy1.shape" output="freehand1"/>
-        <conn input="combine2.list1" output="copy1"/>
         <conn input="translate1.shape" output="combine2"/>
         <conn input="combine3.list2" output="translate1"/>
         <conn input="colorize4.shape" output="rect3"/>
@@ -210,12 +232,10 @@
         <conn input="translate2.shape" output="combine4"/>
         <conn input="combine3.list3" output="translate2"/>
         <conn input="scale1.shape" output="freehand1"/>
-        <conn input="combine4.list1" output="scale1"/>
         <conn input="colorize5.shape" output="rect4"/>
         <conn input="combine5.list2" output="colorize5"/>
         <conn input="translate3.shape" output="combine5"/>
         <conn input="scale2.shape" output="freehand1"/>
-        <conn input="combine5.list1" output="scale2"/>
         <conn input="combine3.list4" output="translate3"/>
         <conn input="colorize6.shape" output="rect5"/>
         <conn input="combine6.list2" output="colorize6"/>
@@ -223,7 +243,6 @@
         <conn input="scale3.shape" output="freehand1"/>
         <conn input="combine3.list5" output="translate4"/>
         <conn input="wiggle1.shape" output="scale3"/>
-        <conn input="combine6.list1" output="wiggle1"/>
         <conn input="colorize7.shape" output="rect6"/>
         <conn input="combine7.list2" output="colorize7"/>
         <conn input="translate5.shape" output="combine7"/>
@@ -240,7 +259,6 @@
         <conn input="combine9.list2" output="translate8"/>
         <conn input="resample1.shape" output="scale5"/>
         <conn input="group1.shapes" output="resample1"/>
-        <conn input="combine8.list1" output="group1"/>
         <conn input="logo.font_name" output="Helvetica"/>
         <conn input="combine2.list3" output="Intersect"/>
         <conn input="Intersect.font_name" output="Helvetica"/>
@@ -287,5 +305,18 @@
         <conn input="combine8.list3" output="Simplify"/>
         <conn input="Simplify.font_name" output="Helvetica"/>
         <conn input="Simplify.align" output="Left"/>
+        <conn input="translate1.translate" output="make_point2"/>
+        <conn input="translate9.shape" output="scale1"/>
+        <conn input="combine4.list1" output="translate9"/>
+        <conn input="translate10.shape" output="copy1"/>
+        <conn input="combine2.list1" output="translate10"/>
+        <conn input="translate11.shape" output="scale2"/>
+        <conn input="combine5.list1" output="translate11"/>
+        <conn input="combine6.list1" output="translate12"/>
+        <conn input="translate12.shape" output="wiggle1"/>
+        <conn input="combine8.list1" output="translate13"/>
+        <conn input="translate13.shape" output="group1"/>
+        <conn input="combine1.list1" output="translate14"/>
+        <conn input="translate14.shape" output="freehand1"/>
     </node>
 </ndbx>
