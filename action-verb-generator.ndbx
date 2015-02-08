@@ -8,8 +8,29 @@
         <node name="Helvetica" position="9.00,-2.00" prototype="string.string">
             <port name="value" type="string" value="Helvetica"/>
         </node>
+        <node name="Intersect" position="9.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="Intersect"/>
+            <port name="position" type="point" value="-67.00,187.00"/>
+        </node>
         <node name="Left" position="12.00,-2.00" prototype="string.string">
             <port name="value" type="string" value="Left"/>
+        </node>
+        <node name="Original" position="3.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="Original"/>
+            <port name="position" type="point" value="-88.00,185.00"/>
+        </node>
+        <node name="Thin" position="15.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="Thin"/>
+            <port name="position" type="point" value="-87.00,187.00"/>
+        </node>
+        <node name="Vibrate" position="27.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="Vibrate"/>
+            <port name="align" type="string" value="LEFT"/>
+            <port name="position" type="point" value="-96.00,187.00"/>
+        </node>
+        <node name="Widen" position="21.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="Widen"/>
+            <port name="position" type="point" value="-78.00,187.00"/>
         </node>
         <node name="colorize2" position="3.00,3.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#00000000"/>
@@ -126,27 +147,6 @@
             <port name="scale" type="point" value="24.00,24.00"/>
         </node>
         <node name="scale5" position="37.00,0.00" prototype="corevector.scale"/>
-        <node name="textpath1" position="3.00,1.00" prototype="corevector.textpath">
-            <port name="text" type="string" value="Original"/>
-            <port name="position" type="point" value="-88.00,185.00"/>
-        </node>
-        <node name="textpath2" position="9.00,1.00" prototype="corevector.textpath">
-            <port name="text" type="string" value="Intersection"/>
-            <port name="position" type="point" value="-67.00,187.00"/>
-        </node>
-        <node name="textpath3" position="15.00,1.00" prototype="corevector.textpath">
-            <port name="text" type="string" value="Thinner"/>
-            <port name="position" type="point" value="-87.00,187.00"/>
-        </node>
-        <node name="textpath4" position="21.00,1.00" prototype="corevector.textpath">
-            <port name="text" type="string" value="Widder"/>
-            <port name="position" type="point" value="-78.00,187.00"/>
-        </node>
-        <node name="textpath5" position="27.00,1.00" prototype="corevector.textpath">
-            <port name="text" type="string" value="Fuzzy"/>
-            <port name="align" type="string" value="LEFT"/>
-            <port name="position" type="point" value="-96.00,187.00"/>
-        </node>
         <node name="textpath6" position="33.00,1.00" prototype="corevector.textpath">
             <port name="text" type="string" value="Multiply"/>
             <port name="align" type="string" value="LEFT"/>
@@ -190,41 +190,27 @@
         <conn input="combine2.list2" output="colorize3"/>
         <conn input="copy1.shape" output="freehand1"/>
         <conn input="combine2.list1" output="copy1"/>
-        <conn input="combine1.list3" output="textpath1"/>
-        <conn input="combine2.list3" output="textpath2"/>
         <conn input="translate1.shape" output="combine2"/>
         <conn input="combine3.list2" output="translate1"/>
         <conn input="colorize4.shape" output="rect3"/>
         <conn input="combine4.list2" output="colorize4"/>
-        <conn input="combine4.list3" output="textpath3"/>
         <conn input="translate2.shape" output="combine4"/>
         <conn input="combine3.list3" output="translate2"/>
         <conn input="scale1.shape" output="freehand1"/>
         <conn input="combine4.list1" output="scale1"/>
         <conn input="colorize5.shape" output="rect4"/>
         <conn input="combine5.list2" output="colorize5"/>
-        <conn input="combine5.list3" output="textpath4"/>
         <conn input="translate3.shape" output="combine5"/>
         <conn input="scale2.shape" output="freehand1"/>
         <conn input="combine5.list1" output="scale2"/>
         <conn input="combine3.list4" output="translate3"/>
         <conn input="colorize6.shape" output="rect5"/>
         <conn input="combine6.list2" output="colorize6"/>
-        <conn input="combine6.list3" output="textpath5"/>
         <conn input="translate4.shape" output="combine6"/>
         <conn input="scale3.shape" output="freehand1"/>
         <conn input="combine3.list5" output="translate4"/>
         <conn input="wiggle1.shape" output="scale3"/>
         <conn input="combine6.list1" output="wiggle1"/>
-        <conn input="textpath1.font_name" output="Helvetica"/>
-        <conn input="textpath2.font_name" output="Helvetica"/>
-        <conn input="textpath3.font_name" output="Helvetica"/>
-        <conn input="textpath4.font_name" output="Helvetica"/>
-        <conn input="textpath5.font_name" output="Helvetica"/>
-        <conn input="textpath4.align" output="Left"/>
-        <conn input="textpath3.align" output="Left"/>
-        <conn input="textpath2.align" output="Left"/>
-        <conn input="textpath1.align" output="Left"/>
         <conn input="colorize7.shape" output="rect6"/>
         <conn input="combine7.list2" output="colorize7"/>
         <conn input="combine7.list3" output="textpath6"/>
@@ -235,7 +221,6 @@
         <conn input="translate6.shape" output="scale4"/>
         <conn input="translate6.translate" output="grid1"/>
         <conn input="combine7.list1" output="translate6"/>
-        <conn input="textpath5.align" output="Left"/>
         <conn input="textpath6.align" output="Left"/>
         <conn input="colorize8.shape" output="rect7"/>
         <conn input="combine8.list2" output="colorize8"/>
@@ -251,5 +236,20 @@
         <conn input="combine8.list1" output="group1"/>
         <conn input="combine3.list7" output="logo"/>
         <conn input="logo.font_name" output="Helvetica"/>
+        <conn input="combine2.list3" output="Intersect"/>
+        <conn input="Intersect.font_name" output="Helvetica"/>
+        <conn input="Intersect.align" output="Left"/>
+        <conn input="combine1.list3" output="Original"/>
+        <conn input="Original.font_name" output="Helvetica"/>
+        <conn input="Original.align" output="Left"/>
+        <conn input="combine4.list3" output="Thin"/>
+        <conn input="Thin.font_name" output="Helvetica"/>
+        <conn input="Thin.align" output="Left"/>
+        <conn input="combine5.list3" output="Widen"/>
+        <conn input="Widen.font_name" output="Helvetica"/>
+        <conn input="Widen.align" output="Left"/>
+        <conn input="combine6.list3" output="Vibrate"/>
+        <conn input="Vibrate.font_name" output="Helvetica"/>
+        <conn input="Vibrate.align" output="Left"/>
     </node>
 </ndbx>
